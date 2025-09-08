@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CurrencyConverterPipe } from './pipe/currency-converter.pipe';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, CurrencyConverterPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -13,5 +15,5 @@ export class AppComponent {
 
   date = new Date();
 
-  amount = 2000.45;
+  amount = 10;
 }

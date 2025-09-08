@@ -1,6 +1,6 @@
 <router-outlet />
 <h2>Title</h2>
-<p>{{title | uppercase}}</p>
+<!-- <p>{{title | uppercase}}</p>
 <p>{{title | lowercase}}</p>
 <p>{{title | titlecase}}</p>
 
@@ -19,4 +19,11 @@
 
 <p>{{amount |currency: 'SLL'}}</p>
 
-<p>{{date | date | uppercase}}</p>
+<p>{{date | date | uppercase}}</p> -->
+
+<hr>
+<h2>Salary</h2>
+
+<p>To US $: {{amount | currencyConverter}}</p>
+<p>To Euro: {{amount | currencyConverter}}</p>
+<p>To Rupees: {{amount | currencyConverter:25}}</p>
